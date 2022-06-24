@@ -2,12 +2,16 @@ This code implements the experiments reported in the following paper:
 
 * *Defending Compositionality in Emergent Languages*. Michal Auersperger, Pavel Pecina. NAACL SRW 2022. [[arxiv]](https://arxiv.org/abs/2206.04751)
 
-# Installation
+# Edit
+The code has been merged to the official [EGG toolkit repository](https://github.com/facebookresearch/EGG). You can find it along other experiments in the `egg/zoo` directory: [egg/zoo/compo_vs_generalization_ood](https://github.com/facebookresearch/EGG/tree/main/egg/zoo/compo_vs_generalization_ood) and ignore this repository.
+_______________________________
+
+### Installation
 The code uses the [EGG toolkit](https://github.com/facebookresearch/EGG), which can be installed like this:
 
 `pip install git+ssh://git@github.com/facebookresearch/EGG.git`
 
-# Running experiments
+### Running experiments
 A single experiment of the full communication game can be run as follows:
 
 ```bash
@@ -24,7 +28,7 @@ See the article for further details.
 The scripts log information to STDOUT. 
 
 
-## Hyperparameters
+#### Hyperparameters
 
 To replicate the *full experiments*, use the hyperparameters in `./hyperparams/modified_arch.json` and `./hyperparams/orig_arch.json`.
 
@@ -44,5 +48,6 @@ runs the first one.
 
 
 
-## Processing the log files
+#### Processing the log files
 For convenience, we attach the log files of our full experiment runs in `results/orig_arch/220520T115546` and `results/modified_arch/220517T231916`. The notebook `ntb-results-full.ipynb` processes the logs and produces Table 2 and Figure 1 from the paper.
+
